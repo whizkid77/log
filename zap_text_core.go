@@ -1,4 +1,4 @@
-// Copyright 2019 PingCAP, Inc.
+// Copyright 2019 whizkid77, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ type textIOCore struct {
 
 func (c *textIOCore) With(fields []zapcore.Field) zapcore.Core {
 	clone := c.clone()
-	// it's different to ioCore, here call textEncoder#addFields to fix https://github.com/pingcap/log/issues/3
+	// it's different to ioCore, here call textEncoder#addFields to fix https://github.com/whizkid77/log/issues/3
 	switch e := clone.enc.(type) {
 	case *textEncoder:
 		e.addFields(fields)

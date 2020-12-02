@@ -1,4 +1,4 @@
-// Copyright 2019 PingCAP, Inc.
+// Copyright 2019 whizkid77, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -630,8 +630,8 @@ func (enc *textEncoder) tryAddRuneError(r rune, size int) bool {
 func (enc *textEncoder) addFields(fields []zapcore.Field) {
 	for _, f := range fields {
 		if f.Type == zapcore.ErrorType {
-			// handle ErrorType in pingcap/log to fix "[key=?,keyVerbose=?]" problem.
-			// see more detail at https://github.com/pingcap/log/pull/5
+			// handle ErrorType in whizkid77/log to fix "[key=?,keyVerbose=?]" problem.
+			// see more detail at https://github.com/whizkid77/log/pull/5
 			enc.encodeError(f)
 			continue
 		}

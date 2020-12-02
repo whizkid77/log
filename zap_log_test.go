@@ -1,4 +1,4 @@
-// Copyright 2019 PingCAP, Inc.
+// Copyright 2019 whizkid77, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,8 +25,8 @@ import (
 	"time"
 	"unsafe"
 
-	. "github.com/pingcap/check"
-	"github.com/pingcap/errors"
+	. "github.com/whizkid77/check"
+	"github.com/whizkid77/errors"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
